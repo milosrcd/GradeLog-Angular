@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,200");
+
+@import "styles/variables";
+@import "styles/mixins";
+
+// Plugins CSS
+@import "styles/plugins/plugin-animate-bootstrap-notify";
+@import "styles/plugins/plugin-perfect-scrollbar";
+
+// Core CSS
+@import "styles/buttons";
+@import "styles/inputs";
+@import "styles/typography";
+@import "styles/misc";
+@import "styles/checkboxes-radio";
+
+// components
+@import "styles/navbar";
+@import "styles/page-header";
+@import "styles/dropdown";
+@import "styles/alerts";
+@import "styles/images";
+@import "styles/nucleo-outline";
+@import "styles/tables";
+@import "styles/sidebar-and-main-panel";
+@import "styles/fixed-plugin";
+
+// cards
+@import "styles/cards";
+@import "styles/cards/card-plain";
+@import "styles/cards/card-chart";
+@import "styles/cards/card-user";
+@import "styles/cards/card-map";
+@import "styles/cards/card-stats";
+
+@import "styles/responsive";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
