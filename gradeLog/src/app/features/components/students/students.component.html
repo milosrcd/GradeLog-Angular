@@ -1,8 +1,8 @@
-<div class="card-header">
-  <h5 class="card-title">Students</h5>
+<div>
+  <app-headline text="Students"></app-headline>
 </div>
-<div class="card-body all-icons">
-  <div id="icons-wrapper">
+<div>
+  <div>
     <section class="students">
       <ng-container *ngFor="let student of students">
         <app-student [student]="student"></app-student>

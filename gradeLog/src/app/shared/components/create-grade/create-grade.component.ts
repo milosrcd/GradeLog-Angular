@@ -18,7 +18,6 @@ export class CreateGradeComponent {
 
   close() {
     this.dialogReference.close('Dialog closed');
-
   }
 
 }
