@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start-gl-app": "ng serve --port=3000 --ssl --open",
+    "start-db": "json-server server/db.json --port=5000 --watch",
+    "start-app": " concurrently  \"npm run start-gl-app\" \"npm run start-db\""
+
   },
   "private": true,
   "dependencies": {

@@ -4,6 +4,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PageCenterComponent } from './components/page-center/page-center.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { RouterModule } from '@angular/router';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 @NgModule({
@@ -12,9 +14,11 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     NavbarComponent,
     PageCenterComponent,
     FooterComponent,
+    NotFoundComponent,
   ],
   imports: [
     CommonModule,
+    RouterModule
   ],
   exports: [
     SidebarComponent,

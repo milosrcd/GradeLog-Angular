@@ -10,33 +10,34 @@
   </div>
   <div class="sidebar-wrapper">
     <ul class="nav">
-      <li>
-        <a href="./dashboard.html">
-          <i class="nc-icon nc-bank"></i>
+
+      <li routerLinkActive="active" [routerLink]="'home'">
+        <a>
+          <i class="nc-icon nc-hat-3"></i>
           <p>HOME</p>
         </a>
       </li>
-      <li class="active">
-        <a href="./icons.html">
-          <i class="nc-icon nc-diamond"></i>
+      <li routerLinkActive="active" [routerLink]="'gradelog'">
+        <a>
+          <i class="nc-icon nc-bullet-list-67"></i>
           <p>GRADELOG</p>
         </a>
       </li>
-      <li>
-        <a href="./map.html">
-          <i class="nc-icon nc-pin-3"></i>
+      <!-- <li routerLinkActive="active" [routerLink]="'creategrade'">
+        <a>
+          <i class="nc-icon nc-glasses-2"></i>
           <p>CREATE GRADE</p>
         </a>
-      </li>
-      <li>
-        <a href="./notifications.html">
-          <i class="nc-icon nc-bell-55"></i>
+      </li> -->
+      <li routerLinkActive="active" [routerLink]="'login'">
+        <a>
+          <i class="nc-icon nc-key-25"></i>
           <p>LOGIN</p>
         </a>
       </li>
-      <li>
-        <a href="./user.html">
-          <i class="nc-icon nc-single-02"></i>
+      <li routerLinkActive="active" [routerLink]="'logout'">
+        <a>
+          <i class="nc-icon nc-key-25"></i>
           <p>LOGOUT</p>
         </a>
       </li>

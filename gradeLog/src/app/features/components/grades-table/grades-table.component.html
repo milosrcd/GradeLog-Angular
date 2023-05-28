@@ -1,0 +1,30 @@
+<div>
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="grades">
+      <ng-container *ngFor="let column of columns">
+        <ng-container [matColumnDef]="column.name">
+          <th mat-header-cell *matHeaderCellDef>
+            {{ column.title }}
+          </th>
+          <td mat-cell *matCellDef="let grade">
+            <ng-container [ngSwitch]="column.name">
+              <ng-container *ngSwitchCase="'comment'">
+                <span [matTooltip]="grade.comment">{{ grade.comment }}</span>
+              </ng-container>
+              <ng-container *ngSwitchDefault>
+                {{ grade[column.property] }}
+              </ng-container>
+            </ng-container>
+          </td>
+        </ng-container>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+
+  <div class="single-book-button">
+    <button (click)="createGrade()">Create Grade</button>
+  </div>
+</div>

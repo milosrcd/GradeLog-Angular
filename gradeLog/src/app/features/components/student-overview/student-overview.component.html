@@ -1,0 +1,36 @@
+<ng-container *ngIf="studentOverview; else studentNotFound">
+  <div class="single-book-container">
+    <div class="single-book-box">
+      <h1 class="single-book-title">Book Overview</h1>
+      <div>
+        <div class="single-book-content">
+          <div class="single-book-img">
+            <img
+              [alt]="studentOverview.fName"
+              class="img"
+              [src]="studentOverview.image"
+            />
+          </div>
+          <div>
+            <p class="single-book-id">StudentID:{{ studentOverview.id }}</p>
+            <p class="bold-text">
+              {{ studentOverview | fullName | titlecase }},
+              <span>{{ studentOverview.birthday | date }}</span>
+            </p>
+            <p class="single-book-paragraf">
+              {{ studentOverview.about }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<div class="single-book-button">
+  <button routerLink="/home" class="book-overview single-book-btn">close</button>
+</div>
+
+<ng-template #studentNotFound>
+  <app-headline text="Student not found"></app-headline>
+</ng-template>
