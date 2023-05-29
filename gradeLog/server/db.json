@@ -203,6 +203,17 @@
       "comment": "mmm",
       "examDate": "2023-05-28T22:00:00.000Z",
       "id": 19
+    },
+    {
+      "name": "Marko Petrovic",
+      "studentID": "2",
+      "lecture": "",
+      "grade": 5,
+      "points": "",
+      "passed": "NO",
+      "comment": "",
+      "examDate": "",
+      "id": 20
     }
   ]
 }

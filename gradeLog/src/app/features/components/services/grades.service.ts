@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, catchError, throwError } from 'rxjs';
 import { GradeDetails } from '../../models/grade-details.model';
@@ -20,6 +20,15 @@ export class GradesService {
         )
       })
     )
+  }
+
+  getStudentById(id: number): Observable<GradeDetails> {
+    return this.httpClient.get<GradeDetails>(`${environment.baseApiUrl}grades/${id}`,
+      {
+        headers: new HttpHeaders({
+          PageName: 'StudentOverview',
+        }),
+      });
   }
 
   createGrade(grade: GradeDetails){
