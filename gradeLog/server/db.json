@@ -214,6 +214,47 @@
       "comment": "",
       "examDate": "",
       "id": 20
+    },
+    {
+      "name": "Marko Petrovic",
+      "studentID": "2",
+      "lecture": "",
+      "grade": 5,
+      "points": "",
+      "passed": "NO",
+      "comment": "",
+      "examDate": "",
+      "id": 21
+    },
+    {
+      "name": "Milos Radoman",
+      "studentID": "3",
+      "lecture": "math",
+      "grade": 10,
+      "points": 100,
+      "passed": "YES",
+      "comment": "thumbs up",
+      "examDate": "2023-04-30T22:00:00.000Z",
+      "id": 22
+    },
+    {
+      "name": "Milos Radoman",
+      "studentID": "3",
+      "lecture": "math",
+      "grade": 10,
+      "points": 100,
+      "passed": "YES",
+      "comment": "thumbs up",
+      "examDate": "2023-04-30T22:00:00.000Z",
+      "id": 23
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "milos@gmail.com",
+      "password": "1111",
+      "role": "admin"
     }
   ]
 }

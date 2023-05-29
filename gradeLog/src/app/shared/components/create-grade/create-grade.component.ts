@@ -1,12 +1,12 @@
-import { Subject, takeUntil } from 'rxjs';
 import { Component, Inject, OnDestroy, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { GradesService } from 'src/app/features/components/services/grades.service';
-import { GradeDetails } from 'src/app/features/models/grade-details.model';
-import { StudentsService } from 'src/app/features/components/services/students.service';
-import { StudentDetails } from 'src/app/features/models/student-details.model';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Subject, takeUntil } from 'rxjs';
+import { GradesService } from 'src/app/features/components/services/grades.service';
+import { StudentsService } from 'src/app/features/components/services/students.service';
+import { GradeDetails } from 'src/app/features/models/grade-details.model';
+import { StudentDetails } from 'src/app/features/models/student-details.model';
 import { GradesForm } from '../../interfaces/grades-form.interface';
 
 @Component({

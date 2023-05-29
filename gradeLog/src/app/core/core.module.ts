@@ -6,7 +6,9 @@ import { PageCenterComponent } from './components/page-center/page-center.compon
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-
+import { LoginComponent } from './auth/components/login/login.component';
+import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,13 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     PageCenterComponent,
     FooterComponent,
     NotFoundComponent,
+    LoginComponent,
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatCardModule,
+    FormsModule,
   ],
   exports: [
     SidebarComponent,
