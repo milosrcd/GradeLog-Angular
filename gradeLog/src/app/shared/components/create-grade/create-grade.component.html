@@ -1,5 +1,5 @@
 <ng-container>
-  <form >
+  <form [formGroup]="gradeForm" (ngSubmit)="onSubmit()">
     <mat-form-field>
       <mat-label>Select me</mat-label>
       <mat-select formControlName="student">
@@ -18,10 +18,10 @@
 
     <br />
     <mat-form-field>
-      <mat-label>Grade</mat-label>
-      <input matInput #input type="number" placeholder="max 100" formControlName="grade"/>
+      <mat-label>Points</mat-label>
+      <input matInput #input type="number" placeholder="max 100" formControlName="points"/>
       <mat-hint align="end" class="grade"
-        >Grade: {{ input.value.length }}</mat-hint
+        >GRADE: {{ input.value.length }}</mat-hint
       >
     </mat-form-field>
 
@@ -51,7 +51,7 @@
     </mat-form-field>
 
     <div mat-dialog-actions>
-      <button>Create</button>
+      <button [disabled]="gradeForm.invalid" type="submit">Create</button>
     </div>
 
     <div mat-dialog-actions>

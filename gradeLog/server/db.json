@@ -181,6 +181,28 @@
       "comment": "Pass",
       "examDate": "2022-12-12",
       "id": 17
+    },
+    {
+      "name": "Milos Radosavljevic",
+      "studentID": "1",
+      "lecture": "math",
+      "comment": "asdas",
+      "examDate": "2023-05-21T22:00:00.000Z",
+      "points": 60,
+      "grade": 6,
+      "passed": "",
+      "id": 18
+    },
+    {
+      "name": "Milos Radosavljevic",
+      "studentID": "1",
+      "lecture": "math",
+      "comment": "asdas",
+      "examDate": "2023-05-21T22:00:00.000Z",
+      "points": 60,
+      "grade": 6,
+      "passed": "",
+      "id": 19
     }
   ]
 }

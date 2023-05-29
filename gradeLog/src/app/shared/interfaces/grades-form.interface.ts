@@ -1,7 +1,9 @@
+import { StudentDetails } from "src/app/features/models/student-details.model"
+
 export interface GradesForm {
-  student: string,
+  student?: StudentDetails,
   lecture: string,
-  grade: number,
+  points: number,
   textarea: string,
   date: Date
 }
