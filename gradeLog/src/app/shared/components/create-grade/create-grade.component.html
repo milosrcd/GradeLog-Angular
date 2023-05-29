@@ -1,51 +1,61 @@
 <ng-container>
-  <mat-form-field>
-    <mat-label>Select me</mat-label>
-    <mat-select>
-      <mat-option value="option">Option</mat-option>
-    </mat-select>
-  </mat-form-field>
+  <form >
+    <mat-form-field>
+      <mat-label>Select me</mat-label>
+      <mat-select formControlName="student">
+        <mat-option *ngFor="let student of studentList" [value]="student">
+          {{ student.fName + ' ' + student.lName }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
 
-  <br />
-  <mat-form-field>
-    <mat-label>Lecture</mat-label>
-    <input matInput #input maxlength="10" placeholder="max 35 characters" />
-    <mat-hint align="end">{{ input.value.length }}/35</mat-hint>
-  </mat-form-field>
+    <br />
+    <mat-form-field>
+      <mat-label>Lecture</mat-label>
+      <input matInput #input maxlength="10" placeholder="max 35 characters" formControlName="lecture"/>
+      <mat-hint align="end">{{ input.value.length }}/35</mat-hint>
+    </mat-form-field>
 
-  <br />
-  <mat-form-field>
-    <mat-label>Grade</mat-label>
-    <input matInput #input type="number" placeholder="max 100" />
-    <mat-hint align="end">"grade is: " {{ input.value.length }}</mat-hint>
-  </mat-form-field>
+    <br />
+    <mat-form-field>
+      <mat-label>Grade</mat-label>
+      <input matInput #input type="number" placeholder="max 100" formControlName="grade"/>
+      <mat-hint align="end" class="grade"
+        >Grade: {{ input.value.length }}</mat-hint
+      >
+    </mat-form-field>
 
-  <br />
-  <mat-form-field>
-    <mat-label>Textarea</mat-label>
-    <textarea
-      matInput
-      #textarea
-      maxlength="250"
-      placeholder="max is 250 characters"
-    ></textarea>
-    <mat-hint align="end">{{ textarea.value.length }}/250</mat-hint>
-  </mat-form-field>
+    <br />
+    <mat-form-field>
+      <mat-label>Textarea</mat-label>
+      <textarea
+        matInput
+        #textarea
+        maxlength="250"
+        placeholder="max is 250 characters"
+        formControlName="textarea"
+      ></textarea>
+      <mat-hint align="end">{{ textarea.value.length }}/250</mat-hint>
+    </mat-form-field>
 
-  <br />
-  <mat-form-field>
-    <mat-label>Choose a date</mat-label>
-    <input matInput [matDatepicker]="picker" />
-    <mat-hint>MM/DD/YYYY</mat-hint>
-    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-  </mat-form-field>
+    <br />
+    <mat-form-field>
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="date"/>
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
 
-  <div mat-dialog-actions>
-    <button>Create</button>
-  </div>
+    <div mat-dialog-actions>
+      <button>Create</button>
+    </div>
 
-  <div mat-dialog-actions>
-    <button (click)="close()">Close</button>
-  </div>
+    <div mat-dialog-actions>
+      <button (click)="close()">Close</button>
+    </div>
+  </form>
 </ng-container>

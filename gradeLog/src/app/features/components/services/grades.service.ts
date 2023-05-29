@@ -21,4 +21,8 @@ export class GradesService {
       })
     )
   }
+
+  createGrade(grade: GradeDetails){
+    return this.httpClient.post(`${environment.baseApiUrl}grades`, grade);
+  }
 }

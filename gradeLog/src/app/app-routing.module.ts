@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PageCenterComponent } from './core/components/page-center/page-center.component';
-import { StudentsComponent } from './features/components/students/students.component';
 import { NotFoundComponent } from './core/components/not-found/not-found.component';
-import { StudentOverviewComponent } from './features/components/student-overview/student-overview.component';
 import { GradesTableComponent } from './features/components/grades-table/grades-table.component';
+import { StudentOverviewComponent } from './features/components/student-overview/student-overview.component';
+import { StudentsComponent } from './features/components/students/students.component';
 
 const routes: Routes = [
   {
