@@ -57,27 +57,27 @@ export class CreateGradeComponent implements OnInit, OnDestroy {
     switch (true) {
       case formData.points <= 54:
         this.gradePoints = 5;
-        this.passed = 'Failed';
+        this.passed = 'NO';
         break;
       case formData.points <= 64:
         this.gradePoints = 6;
-        this.passed = 'Passed';
+        this.passed = 'YES';
         break;
       case formData.points <= 74:
         this.gradePoints = 7;
-        this.passed = 'Passed';
+        this.passed = 'YES';
         break;
       case formData.points <= 84:
         this.gradePoints = 8;
-        this.passed = 'Passed';
+        this.passed = 'YES';
         break;
       case formData.points <= 94:
         this.gradePoints = 9;
-        this.passed = 'Passed';
+        this.passed = 'YES';
         break;
       default:
         this.gradePoints = 10;
-        this.passed = 'Passed';
+        this.passed = 'YES';
         break;
     }
 
@@ -86,11 +86,11 @@ export class CreateGradeComponent implements OnInit, OnDestroy {
       name: formData.student!.fName + ' ' + formData.student!.lName,
       studentID: formData.student!.id.toString(),
       lecture: formData.lecture,
+      grade: this.gradePoints,
+      points: formData.points,
+      passed: this.passed,
       comment: formData.textarea,
       examDate: formData.date,
-      points: formData.points,
-      grade: this.gradePoints,
-      passed: this.passed,
       id: 0
     };
 
