@@ -9,6 +9,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { LoginComponent } from './auth/components/login/login.component';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button/button-module';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     RouterModule,
     MatCardModule,
-    FormsModule,
+    FormsModule
   ],
   exports: [
     SidebarComponent,

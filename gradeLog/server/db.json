@@ -205,28 +205,6 @@
       "id": 19
     },
     {
-      "name": "Marko Petrovic",
-      "studentID": "2",
-      "lecture": "",
-      "grade": 5,
-      "points": "",
-      "passed": "NO",
-      "comment": "",
-      "examDate": "",
-      "id": 20
-    },
-    {
-      "name": "Marko Petrovic",
-      "studentID": "2",
-      "lecture": "",
-      "grade": 5,
-      "points": "",
-      "passed": "NO",
-      "comment": "",
-      "examDate": "",
-      "id": 21
-    },
-    {
       "name": "Milos Radoman",
       "studentID": "3",
       "lecture": "math",
