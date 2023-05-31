@@ -9,24 +9,12 @@ import { AuthAdminGuard } from './shared/guards/auth-admin.guard';
 
 const routes: Routes = [
   {
-    path: 'home',
-    component: StudentsComponent
-  },
-  {
-    path: 'student/:id',
-    component: StudentOverviewComponent
-  },
-  {
-    path: 'gradelog',
-    component: GradesTableComponent
+    path: '',
+    loadChildren: () => import ('./features/components/students/students.module').then((module) => module.StudentsModule),
   },
   {
     path: 'login',
     component: LoginComponent
-  },
-  {
-    path: 'creategrade',
-    component: StudentsComponent
   },
   {
     path: '**',

@@ -225,6 +225,39 @@
       "comment": "thumbs up",
       "examDate": "2023-04-30T22:00:00.000Z",
       "id": 23
+    },
+    {
+      "name": "Marko Petrovic",
+      "studentID": "2",
+      "lecture": "angular",
+      "grade": 5,
+      "points": 30,
+      "passed": "NO",
+      "comment": "fails",
+      "examDate": "2023-05-29T22:00:00.000Z",
+      "id": 24
+    },
+    {
+      "name": "Marko Petrovic",
+      "studentID": "2",
+      "lecture": "angular",
+      "grade": 5,
+      "points": 30,
+      "passed": "NO",
+      "comment": "fails",
+      "examDate": "2023-05-29T22:00:00.000Z",
+      "id": 25
+    },
+    {
+      "name": "Milos Radoman",
+      "studentID": "3",
+      "lecture": "",
+      "grade": 5,
+      "points": "",
+      "passed": "NO",
+      "comment": "",
+      "examDate": "2023-05-19T22:00:00.000Z",
+      "id": 26
     }
   ],
   "users": [

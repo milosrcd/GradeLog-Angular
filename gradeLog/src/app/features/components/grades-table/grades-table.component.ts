@@ -63,7 +63,7 @@ export class GradesTableComponent implements OnInit, OnDestroy {
 
   private unsubscribe$: Subject<void> = new Subject<void>;
 
-  constructor(private gradesService: GradesService, public dialog: MatDialog) { }
+  constructor(private gradesService: GradesService, private dialog: MatDialog) { }
 
 
   ngOnInit(): void {
@@ -82,7 +82,7 @@ export class GradesTableComponent implements OnInit, OnDestroy {
   createGrade(){
     this.dialog.open(CreateGradeComponent, {
       minHeight: '400px',
-      width: '30%'
+      width: '24%'
     })
   }
 
