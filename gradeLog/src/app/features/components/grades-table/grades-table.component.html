@@ -14,6 +14,11 @@
               <ng-container *ngSwitchCase="'comment'">
                 <span [matTooltip]="grade.comment">{{ grade.comment }}</span>
               </ng-container>
+              <ng-container *ngSwitchCase="'edit'">
+                <span [matTooltip]="'Edit Grade'">
+                  <i class="nc-icon nc-paper"></i
+                ></span>
+              </ng-container>
               <ng-container *ngSwitchDefault>
                 {{ grade[column.property] }}
               </ng-container>

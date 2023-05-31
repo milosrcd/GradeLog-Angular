@@ -90,7 +90,7 @@ export class CreateGradeComponent implements OnInit, OnDestroy {
       points: formData.points,
       passed: this.passed,
       comment: formData.textarea,
-      examDate: formData.date,
+      examDate: new Date().toISOString(),
       id: 0
     };
 

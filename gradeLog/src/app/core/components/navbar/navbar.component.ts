@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,32 +6,36 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  @Input() placeholder? : string;
   @Output() searchResult = new EventEmitter<string>();
 
   defaultValue = '';
+  search = '';
 
 
   constructor() {
-
-    const filter: string | null = localStorage.getItem('filter');
+    const filter = localStorage.getItem('filter');
 
     if (filter) {
       const stringToObj = JSON.parse(filter);
       console.log(stringToObj);
       this.defaultValue = stringToObj.userSearch;
     }
-
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
-  onSearchAction(input: HTMLInputElement) {
-    this.searchResult.emit(input.value);
-  }
+  // onSearchAction(input: HTMLInputElement) {
+  //   this.searchResult.emit(this.search);
+  // }
 
-  onChange(input: HTMLInputElement) {
-    this.searchResult.emit(input.value);
+  // onChange(input: HTMLInputElement) {
+  //   this.searchResult.emit(input.value);
+  // }
+
+  onClick(): void {
+    this.searchResult.emit(this.search);
+  }
+  outputSearch(event: any) {
+    this.search = event.target.value;
   }
 }

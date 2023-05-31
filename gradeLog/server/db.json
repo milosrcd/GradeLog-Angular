@@ -258,6 +258,50 @@
       "comment": "",
       "examDate": "2023-05-19T22:00:00.000Z",
       "id": 26
+    },
+    {
+      "name": "Milos Radosavljevic",
+      "studentID": "1",
+      "lecture": "angular",
+      "grade": 6,
+      "points": 60,
+      "passed": "YES",
+      "comment": "barrely passed",
+      "examDate": "2023-05-30T22:00:00.000Z",
+      "id": 27
+    },
+    {
+      "name": "Milos Radosavljevic",
+      "studentID": "1",
+      "lecture": "math",
+      "grade": 10,
+      "points": 100,
+      "passed": "YES",
+      "comment": "mmm",
+      "examDate": "2023-05-31T18:54:19.471Z",
+      "id": 28
+    },
+    {
+      "name": "Milos Radosavljevic",
+      "studentID": "1",
+      "lecture": "math",
+      "grade": 10,
+      "points": 100,
+      "passed": "YES",
+      "comment": "mmm",
+      "examDate": "2023-05-31T18:54:20.118Z",
+      "id": 29
+    },
+    {
+      "name": "Milos Radosavljevic",
+      "studentID": "1",
+      "lecture": "",
+      "grade": 5,
+      "points": "",
+      "passed": "NO",
+      "comment": "",
+      "examDate": "2023-05-31T18:56:36.150Z",
+      "id": 30
     }
   ],
   "users": [

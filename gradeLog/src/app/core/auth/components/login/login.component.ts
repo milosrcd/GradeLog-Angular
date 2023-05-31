@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
     .subscribe((data: any) => {
       if(data.length){
         localStorage.setItem('logged_user', JSON.stringify(data[0]));
-        this.router.navigateByUrl('home');
+        this.router.navigateByUrl('');
       }else{
         alert('You are not registered')
       }

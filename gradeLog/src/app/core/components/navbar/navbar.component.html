@@ -27,13 +27,16 @@
     <div class="collapse navbar-collapse justify-content-end" id="navigation">
       <div>
         <input
+          (keyup)="outputSearch($event)"
           type="text"
-          placeholder="{{ placeholder }}"
           #searchValue
           [value]="defaultValue"
-          (change)="onChange(searchValue)"
         />
-        <button mat-mini-fab class="searchBtn" (onClick)="onSearchAction(searchValue)">
+        <button
+          mat-mini-fab
+          class="searchBtn"
+          (click)="onClick()"
+        >
           <span class="material-symbols-rounded"> search </span>
         </button>
       </div>

@@ -7,6 +7,6 @@ export interface GradeDetails {
   grade: number,
   passed: string,
   comment: string,
-  examDate: Date,
+  examDate: string,
   id: number
 }

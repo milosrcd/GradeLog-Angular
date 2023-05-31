@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { StudentsComponent } from './students.component';
-import { StudentOverviewComponent } from '../student-overview/student-overview.component';
 import { GradesTableComponent } from '../grades-table/grades-table.component';
+import { AuthAdminGuard } from 'src/app/shared/guards/auth-admin.guard';
+import { StudentOverviewComponent } from '../student-overview/student-overview.component';
 
 const routes: Routes = [
   {
@@ -15,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'gradelog',
-    component: GradesTableComponent
+    component: GradesTableComponent,
   }
 ];
 
