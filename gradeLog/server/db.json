@@ -192,6 +192,138 @@
       "comment": "pass",
       "examDate": "5/31/2023",
       "id": 34
+    },
+    {
+      "name": "Milos Radosavljevic",
+      "studentID": "1",
+      "lecture": "",
+      "grade": 5,
+      "points": "",
+      "passed": "NO",
+      "comment": "",
+      "examDate": "5/31/2023",
+      "id": 35
+    },
+    {
+      "name": "Milos Radosavljevic",
+      "studentID": "1",
+      "lecture": "math",
+      "grade": 10,
+      "points": 100,
+      "passed": "YES",
+      "comment": "pass",
+      "examDate": "6/1/2023",
+      "id": 36
+    },
+    {
+      "name": "Milos Radosavljevic",
+      "studentID": "1",
+      "lecture": "math",
+      "grade": 10,
+      "points": 100,
+      "passed": "YES",
+      "comment": "pass",
+      "examDate": "6/1/2023",
+      "id": 37
+    },
+    {
+      "name": "Marko Petrovic",
+      "studentID": "2",
+      "lecture": "math",
+      "grade": 6,
+      "points": 60,
+      "passed": "YES",
+      "comment": "aaa",
+      "examDate": "6/1/2023",
+      "id": 38
+    },
+    {
+      "name": "Marko Petrovic",
+      "studentID": "2",
+      "lecture": "math",
+      "grade": 6,
+      "points": 60,
+      "passed": "YES",
+      "comment": "aaa",
+      "examDate": "6/1/2023",
+      "id": 39
+    },
+    {
+      "name": "Milos Radoman",
+      "studentID": "3",
+      "lecture": "aa",
+      "grade": 10,
+      "points": 100,
+      "passed": "YES",
+      "comment": "asdad",
+      "examDate": "6/1/2023",
+      "id": 40
+    },
+    {
+      "name": "Milos Radoman",
+      "studentID": "3",
+      "lecture": "aa",
+      "grade": 10,
+      "points": 100,
+      "passed": "YES",
+      "comment": "asdad",
+      "examDate": "6/1/2023",
+      "id": 41
+    },
+    {
+      "name": "Milos Radosavljevic",
+      "studentID": "1",
+      "lecture": "nnn",
+      "grade": 10,
+      "points": 100,
+      "passed": "YES",
+      "comment": "sadad",
+      "examDate": "6/1/2023",
+      "id": 42
+    },
+    {
+      "name": "Milos Radosavljevic",
+      "studentID": "1",
+      "lecture": "java",
+      "grade": 7,
+      "points": 70,
+      "passed": "YES",
+      "comment": "pass",
+      "examDate": "6/1/2023",
+      "id": 43
+    },
+    {
+      "name": "Tamara Manojlovic",
+      "studentID": "6",
+      "lecture": "3dmax",
+      "grade": 10,
+      "points": 100,
+      "passed": "YES",
+      "comment": "Pass",
+      "examDate": "6/1/2023",
+      "id": 44
+    },
+    {
+      "name": "Milos Radosavljevic",
+      "studentID": "1",
+      "lecture": "Angular",
+      "grade": 7,
+      "points": 67,
+      "passed": "YES",
+      "comment": "passed",
+      "examDate": "6/1/2023",
+      "id": 45
+    },
+    {
+      "name": "Milos Radosavljevic",
+      "studentID": "1",
+      "lecture": "angular",
+      "grade": 5,
+      "points": 1,
+      "passed": "NO",
+      "comment": "fails",
+      "examDate": "6/1/2023",
+      "id": 46
     }
   ],
   "users": [

@@ -1,7 +1,7 @@
 <mat-card class="example-card">
   <mat-card-header>
     <mat-card-title-group>
-      <mat-card-title [routerLink]="['/student', student.id]">{{
+      <mat-card-title [routerLink]="['/student', student.id]" class="cursor">{{
         student | fullName | titlecase
       }}</mat-card-title>
       <mat-card-subtitle>{{ student.birthday }}</mat-card-subtitle>

@@ -2,7 +2,7 @@ import { Component, Inject, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import { Subject, takeUntil } from 'rxjs';
+import { Subject, take, takeUntil } from 'rxjs';
 import { GradesService } from 'src/app/features/components/services/grades.service';
 import { StudentsService } from 'src/app/features/components/services/students.service';
 import { GradeDetails } from 'src/app/features/models/grade-details.model';
@@ -45,10 +45,6 @@ export class CreateGradeComponent implements OnInit, OnDestroy {
   }
   ngOnInit(): void {
     this.getStudents();
-  }
-
-  close() {
-    this.dialogReference.close('Dialog closed');
   }
 
   onSubmit() {
@@ -95,9 +91,18 @@ export class CreateGradeComponent implements OnInit, OnDestroy {
     };
 
     this.gradeService.createGrade(grade)
+      .pipe(take(1))
       .subscribe((data: any) => {
         this.router.navigateByUrl('gradelog');
       });
+
+    this.close();
+
+  }
+
+  private close() {
+    this.dialogReference.close('Dialog closed');
+    window.location.reload()
   }
 
   private getStudents() {
