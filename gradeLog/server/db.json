@@ -324,6 +324,17 @@
       "comment": "fails",
       "examDate": "6/1/2023",
       "id": 46
+    },
+    {
+      "name": "Danijela Nikitin",
+      "studentID": "4",
+      "lecture": "Angular",
+      "grade": 10,
+      "points": 100,
+      "passed": "YES",
+      "comment": "passed",
+      "examDate": "2023-06-01T08:34:09.402Z",
+      "id": 47
     }
   ],
   "users": [

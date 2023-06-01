@@ -14,6 +14,9 @@
               <ng-container *ngSwitchCase="'comment'">
                 <span [matTooltip]="grade.comment">{{ grade.comment }}</span>
               </ng-container>
+              <ng-container *ngSwitchCase="'examDate'">
+                <span>{{ grade.examDate | date: "dd.MM.YYYY" }}</span>
+              </ng-container>
               <ng-container *ngSwitchCase="'edit'">
                 <span [matTooltip]="'Edit Grade'" class="cursor">
                   <i class="nc-icon nc-paper"></i
