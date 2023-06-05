@@ -15,7 +15,7 @@
             <p>StudentID:{{ studentOverview.id }}</p>
             <p>
               {{ studentOverview | fullName | titlecase }},
-              <span>{{ studentOverview.birthday | date }}</span>
+              <span>{{ studentOverview.birthday | date: "dd.MM.YYYY" }}</span>
             </p>
             <p>
               {{ studentOverview.about }}

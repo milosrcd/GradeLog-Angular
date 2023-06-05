@@ -4,7 +4,9 @@
       <mat-card-title [routerLink]="['/student', student.id]" class="cursor">{{
         student | fullName | titlecase
       }}</mat-card-title>
-      <mat-card-subtitle>{{ student.birthday }}</mat-card-subtitle>
+      <mat-card-subtitle>{{
+        student.birthday | date : "dd.MM.YYYY"
+      }}</mat-card-subtitle>
     </mat-card-title-group>
     <mat-card-title-group>
       {{ student.about | descriptionLimit : 27 }}

@@ -12,13 +12,15 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
+import { SearchPipe } from './pipes/search.pipe';
 
 @NgModule({
   declarations: [
     DescriptionLimitPipe,
     FullNamePipe,
     HeadlineComponent,
-    CreateGradeComponent
+    CreateGradeComponent,
+    SearchPipe
   ],
   imports: [
     CommonModule,
@@ -35,7 +37,8 @@ import { NgModule } from '@angular/core';
   exports: [
     DescriptionLimitPipe,
     FullNamePipe,
-    HeadlineComponent
+    HeadlineComponent,
+    SearchPipe
   ]
 })
 export class SharedModule { }

@@ -335,6 +335,17 @@
       "comment": "passed",
       "examDate": "2023-06-01T08:34:09.402Z",
       "id": 47
+    },
+    {
+      "name": "Milos Radoman",
+      "studentID": "3",
+      "lecture": "ts",
+      "grade": 10,
+      "points": 100,
+      "passed": "YES",
+      "comment": "pass",
+      "examDate": "2023-06-02T19:21:14.898Z",
+      "id": 48
     }
   ],
   "users": [
